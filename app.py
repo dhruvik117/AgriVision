@@ -78,7 +78,7 @@ st.markdown("""
 # MODEL + CLASS NAMES
 # ============================================================
 
-MODEL_PATH = "model/AgriVision_V2.keras"
+MODEL_PATH = "model/AgriVision_best.keras"
 CLASS_PATH = "class_names.json"
 
 @st.cache_resource
