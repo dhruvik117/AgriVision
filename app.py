@@ -4,6 +4,7 @@ import tensorflow as tf
 import numpy as np
 import json
 from PIL import Image
+from tensorflow.keras.applications.mobilenet_v2 import preprocess_input
 
 # ============================================================
 # PAGE CONFIG
