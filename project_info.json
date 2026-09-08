@@ -1,0 +1,11 @@
+{
+    "name": "AgriVision",
+    "version": "1.0 Prototype",
+    "model": "MobileNetV2 Transfer Learning",
+    "classes": 15,
+    "primary_model": "AgriVision_V2.keras",
+    "plantvillage_test_accuracy": "96.62%",
+    "real_world_benchmark": "PlantDoc",
+    "purpose": "Crop disease screening and farmer assistance",
+    "safety": "Predictions should be treated as screening assistance, not guaranteed diagnosis."
+}
