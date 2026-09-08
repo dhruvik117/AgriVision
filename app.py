@@ -82,15 +82,15 @@ MODEL_PATH = "model/AgriVision_best.keras"
 CLASS_PATH = "class_names.json"
 
 @st.cache_resource
-def load_model():
-    return tf.keras.models.load_model(MODEL_PATH)
+def load_model(model_path):
+    return tf.keras.models.load_model(model_path)
 
 @st.cache_data
 def load_classes():
     with open(CLASS_PATH, "r", encoding="utf-8") as f:
         return json.load(f)
 
-model = load_model()
+model = load_model(MODEL_PATH)
 class_names = load_classes()
 
 # ============================================================
