@@ -664,9 +664,6 @@ if uploaded_file is not None:
             arr = np.array(img).astype("float32")
             arr = np.expand_dims(arr, axis=0)
 
-            # MobileNetV2 preprocessing
-            arr = tf.keras.applications.mobilenet_v2.preprocess_input(arr)
-
             # Prediction
             predictions = model.predict(arr, verbose=0)[0]
 
